@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Roshambo!</title>
+</head>
+<body>
+  <script>
+    function computerPlay() {
+        let computerChoice = Math.floor(Math.random() * 3);
+        if (computerChoice === 0) {
+            computerChoice = 'rock';
+        }
+        else if (computerChoice === 1) {
+            computerChoice = 'paper';
+        }
+        else {
+            computerChoice = 'scissors';
+        }
+        return computerChoice;
+    }
+    function playRound() {
+        let playerChoice = prompt('rock, paper, or scissors?');
+        playerChoice = playerChoice.toLowerCase();
+        let computerChoice = computerPlay();
+        if (playerChoice === computerChoice) {
+                console.log ("It's a tie!");
+                playRound()
+            }
+        else if (playerChoice === 'rock') {
+            if (computerChoice === 'scissors') {
+                console.log ("You win! Rock beats scissors.");
+                return 'win'
+            }
+            else if (computerChoice === 'paper') {
+                console.log ("You loose! Paper beats rock.");
+                return 'loose';
+            }
+        }
+        else if (playerChoice === 'paper') {
+            if (computerChoice === 'rock') {
+                console.log ("You win! Paper beats rock.");
+                return 'win';
+            }
+            else if (computerChoice === 'scissors') {
+                console.log ("You loose! Scissors beats paper.");
+                return 'loose';
+            }
+        }
+        else if (playerChoice === 'scissors') {
+            if (computerChoice === 'paper') {
+                console.log ("You win! Scissors beats paper.");
+                return 'win';
+            }
+            else if (computerChoice === 'rock') {
+                console.log ("You loose! Rock beats scissors.");
+                return 'loose';
+            }
+        }
+        else {
+            alert ("Not a valid selection")
+            playRound()
+        }
+    }
+    function game(){
+        let playerScore = 0;
+        let computerScore = 0;
+        while (playerScore < 3 && computerScore < 3) {
+            let result = playRound();
+            if (result === 'win'){
+                playerScore++;
+                console.log ('Your score: ' + playerScore + ' Computer score: ' + computerScore)
+            }
+            else {
+                computerScore++;
+                console.log ('Your score: ' + playerScore + ' Computer score: ' + computerScore)
+            }
+        }
+        if (playerScore === 3) {
+            console.log ("You've defeated the almighty Roshambobot");
+        }
+        else {
+            console.log ('All your base are belong to us!');
+        }
+    }
+  </script>
+</body>
+</html>

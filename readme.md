@@ -18,7 +18,7 @@ Generate computer input: (random interger value 0-2)
 
 
 round  
-    if UI = CI   
+    if UI(user input) = CI(computer input)  
         tie, no score  
         play again  
     if UI = rock  

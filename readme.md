@@ -1,17 +1,17 @@
 # Rock Paper Scissors
 ## Test your skills against the almighty ROSHAMBOBOT
-### Works in console! (its a feature not a bug)
+### Works in console! (it's a feature not a bug)
 
 This is my first JavaScript project. I completed it after spending some time studying JavaScript via The Odin Project. It plays individual and best 3 out of 5 rounds of Rock, Paper, Scissors with the computer in the console. No GUI for now. At the time this helped improve my skills with function, if statement, and loop syntax and especially with function and variable scope. 
 
 Individual rounds are played with `playRound()`  
 Games of 3 out of 5 are played with `Game()`
 
-Here is the psuedocode I wrote before scripting the project:   
+#### Here is the pseudocode I wrote before scripting the project:   
 Get user input: rock paper or scissors  
 make user input non case sensitive  
 
-Generate computer input: (random interger value 0-2)     
+Generate computer input: (random integer value 0-2)     
     0 = rock  
     1 = paper  
     2 = scissors  

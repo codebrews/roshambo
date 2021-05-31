@@ -1,7 +1,7 @@
 Rock Paper Scissors
 Test your skills against the almighty ROSHAMBOBOT
 
-Works in console! 
+Works in console! (its a feature not a bug)
 
 A few notes and fixes:
 1) Most important issue to overcome was trying to return values prior to completing functions. Just set a variable which can be returned later
@@ -34,8 +34,8 @@ round
             you win
             user score + 1
         if CI = scissors
-                you loose
-        comp score + 1
+            you loose
+            comp score + 1
     if UI = scissors
         if CI = paper 
             you win

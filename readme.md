@@ -1,16 +1,18 @@
-Rock Paper Scissors
-Test your skills against the almighty ROSHAMBOBOT
+# Rock Paper Scissors
+## Test your skills against the almighty ROSHAMBOBOT
 
-Works in console! (its a feature not a bug)
+### Works in console! (its a feature not a bug)
 
-A few notes and fixes:
-1) Most important issue to overcome was trying to return values prior to completing functions. Just set a variable which can be returned later
-2) Played around with returning scores in the playRound function which would have worked
-1) Put variable for score outside of functions global, which allowed this to be used between functions.
+#### What it does:
 
-Psuedocode:
-Get user input: rock paper or scissors
-    make user input non case sensitive
+-plays a game of best 3 out of 5 with the 'game()' function 
+-also plays a single round with the 'playRound()' function
+-player inputs via prompt
+-computer randomly chooses paper, rock, or scissors via random interger value 0-2
+
+Here is the psuedocode I wrote before scripting the project 
+Get user input: rock paper or scissors 
+make user input non case sensitive
 
 Generate computer input: (random interger value 0-2)
     0 = rock
